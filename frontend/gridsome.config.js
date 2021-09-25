@@ -9,7 +9,17 @@ module.exports = {
   siteDescription: "A blog site made using Gridsome and Strapi",
   plugins: [
 		{
-			use: "gridsome-plugin-tailwindcss"
+			use: "gridsome-plugin-tailwindcss",
+			/**
+			 * These are the default options.
+
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false
+      }
+			 */
 		},
     {
       use: "@gridsome/source-graphql",
