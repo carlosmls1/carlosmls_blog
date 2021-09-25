@@ -1,0 +1,41 @@
+{
+  "name": "gridsome-starter-strapi",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "lint": "eslint --ext .js,.vue .",
+    "lint:fix": "eslint --ext .js,.vue . --fix"
+  },
+  "dependencies": {
+    "@gridsome/source-graphql": "^0.1.0",
+    "@headlessui/vue": "^1.4.1",
+    "@heroicons/vue": "^1.0.4",
+    "@vue-hero-icons/solid": "^1.7.2",
+    "axios": "^0.21.4",
+    "babel-runtime": "^6.26.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-tailwindcss": "^4.1.1",
+    "highlight.js": "^11.2.0",
+    "marked": "^3.0.4",
+    "moment": "^2.27.0",
+    "postcss-import": "^14.0.2",
+    "prismjs": "^1.25.0",
+    "vue-markdown": "^2.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.9.0",
+    "eslint-plugin-gridsome": "^1.5.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^7.0.36",
+    "prettier": "^2.1.2",
+    "sass-loader": "^10",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14",
+    "vue-eslint-parser": "^7.1.0"
+  }
+}
