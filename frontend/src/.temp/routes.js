@@ -1,9 +1,9 @@
-const c1 = () => import(/* webpackChunkName: "page--src--templates--article-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/src/templates/Article.vue")
-const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/src/templates/Category.vue")
-const c3 = () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/src/pages/Contact.vue")
-const c4 = () => import(/* webpackChunkName: "page--src--pages--blog-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/src/pages/Blog.vue")
-const c5 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/node_modules/gridsome/app/pages/404.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/carlosma/PhpstormProjects/carlosma/strapi/frontend/src/pages/Index.vue")
+const c1 = () => import(/* webpackChunkName: "page--src--templates--article-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/src/templates/Article.vue")
+const c2 = () => import(/* webpackChunkName: "page--src--templates--category-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/src/templates/Category.vue")
+const c3 = () => import(/* webpackChunkName: "page--src--pages--contact-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/src/pages/Contact.vue")
+const c4 = () => import(/* webpackChunkName: "page--src--pages--blog-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/src/pages/Blog.vue")
+const c5 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/node_modules/gridsome/app/pages/404.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/carlosma/WebstormProjects/carlosmls/frontend/src/pages/Index.vue")
 
 export default [
   {
@@ -45,10 +45,6 @@ export default [
   {
     path: "/category/food/",
     component: c2
-  },
-  {
-    path: "/article/developer-life/",
-    component: c1
   },
   {
     path: "/article/beautiful-picture/",
