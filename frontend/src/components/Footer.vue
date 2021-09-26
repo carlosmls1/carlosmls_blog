@@ -46,7 +46,7 @@
                 </span>
 					<span class="mt-7 md:mt-1">
                     Created by
-                    <a class="underline hover:text-primary-gray-20" href="https://www.linkedin.com/in/crabiller/">
+                    <a class="underline hover:text-primary-gray-20" href="#/">
                         Charlie
                     </a>
                 </span>
