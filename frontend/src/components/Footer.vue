@@ -19,7 +19,7 @@
 				<div class="md:hidden mt-4 mx-auto w-11 h-px rounded-full">
 				</div>
 				<div class="mt-4 md:mt-0 flex-1 flex items-center justify-center md:border-r border-gray-100">
-					<a class="hover:text-primary-gray-20" href="https://github.com/Charlie85270/tail-kit">
+					<a class="hover:text-primary-gray-20" href="https://github.com/carlosmls1">
                     <span class="sr-only">
                         View on GitHub
                     </span>
