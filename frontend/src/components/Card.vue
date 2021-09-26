@@ -1,5 +1,5 @@
 <template>
-		<div class="overflow-hidden shadow-lg rounded-lg h-full w-60 md:w-full cursor-pointer m-auto">
+		<div class="overflow-hidden shadow-lg rounded-lg h-full w-60 md:w-full cursor-pointer m-auto border">
 				<g-link
 						class=""
 						:to="{ path: '/article/' + article.slug }"

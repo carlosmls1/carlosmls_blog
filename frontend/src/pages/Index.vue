@@ -74,7 +74,7 @@ export default {
 	},
 	data: function () {
 		return {
-			bg_color: ['yellow','red','indigo','pink','green','purple'].circleColor()
+			bg_color: ['yellow'].circleColor()
 		}
 	},
 	methods: {

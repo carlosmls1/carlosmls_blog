@@ -1,5 +1,5 @@
 <template>
-	<div class="blog-content">
+	<div class="blog-content dark:text-white">
 		<VueMarkdown v-bind="$props" />
 	</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
-	<main class="dark:bg-gray-800 font-mono bg-white relative h-screen">
-		<header class="h-24 sm:h-32 flex items-center z-30 w-full shadow fixed bg-white">
+	<main class="dark:bg-gray-800 font-mono bg-white relative h-full">
+		<header class="h-24 sm:h-32 flex items-center z-30 w-full shadow fixed bg-white dark:bg-gray-800">
 			<div class="container mx-auto px-6 flex items-center justify-between">
 				<div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
 					{{ title_page }}
@@ -27,7 +27,7 @@
 				<slot/>
 			</div>
 		</div>
-		<Footer/>
+    <Footer />
 	</main>
 </template>
 <script>

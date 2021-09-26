@@ -1,39 +1,24 @@
 <template>
-  <div>
-    <div>
-      <nav class="uk-navbar-container" uk-navbar>
-        <div class="uk-navbar-left">
-          <ul class="uk-navbar-nav">
-            <li>
-              <g-link to="/">{{ $static.strapi.global.siteName }}</g-link>
-            </li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <button
-            class="uk-button uk-button-default uk-margin-right"
-            type="button"
-          >
-            Categories
-          </button>
-          <div
-            uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000"
-          >
-            <ul class="uk-nav uk-dropdown-nav">
-              <li
-                v-for="category in $static.strapi.categories"
-                :key="category.id"
-              >
-                <g-link :to="'/category/' + category.slug">{{
-                  category.name
-                }}</g-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div>
+	<div class="container mx-auto px-6 flex items-center justify-between">
+		<div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+			{{ title_page }}
+		</div>
+		<div class="flex items-center">
+			<nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+				<g-link class="py-2 px-6 flex hover:text-black" to="/">Home</g-link>
+				<g-link class="py-2 px-6 flex hover:text-black" to="/blog">Blog</g-link>
+				<g-link class="py-2 px-6 flex hover:text-black" to="/contact">Contact</g-link>
+			</nav>
+			<button class="lg:hidden flex flex-col ml-4">
+                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+				<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+				<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+			</button>
+		</div>
+	</div>
 </template>
 
 <static-query>

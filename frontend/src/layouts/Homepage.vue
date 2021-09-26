@@ -8,7 +8,7 @@
 						</path>
 					</svg>
 					<span class="text-xs ml-3 mt-1">
-                    carlosma@gmail.com
+                    carlosmls.crc@gmail.com
                 </span>
 				</div>
 				<div class="flex items-center">

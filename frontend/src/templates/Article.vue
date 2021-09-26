@@ -29,7 +29,7 @@
 		</section>
 			<div class="w-full mx-20 -mt-8 z-10">
 				<div class="grid grid-cols-1 md:grid-cols-4 gap-6	">
-					<div class="col-span-3 shadow bg-white rounded border p-16" id="content">
+					<div class="col-span-3 shadow bg-white dark:bg-gray-500 rounded border p-16" id="content">
 						<MyMarkdown :source="$page.strapi.articles[0].content"></MyMarkdown>
 					</div>
 
