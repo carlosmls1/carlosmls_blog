@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+	"develop": "./backend/strapi develop",
+	"start": "./backend/strapi start",
+	"build": "./backend/strapi build",
+	"strapi": "strapi"
+  },
+  "author": {
+	"name": "Carlos M A"
+  }
+}
