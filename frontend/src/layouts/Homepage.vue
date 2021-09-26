@@ -50,16 +50,12 @@
 	</main>
 </template>
 <script>
-import Navbar from "~/components/Navbar";
 
 export default {
 	props: ['color'],
-	components: {
-		Navbar,
-	},
 	data: function () {
 		return {
-			bg_color: this.color
+			bg_color: 'yellow'
 		}
 	}
 }
@@ -76,7 +72,6 @@ siteName
 
 .area{
 	position: absolute;
-	background: -webkit-linear-gradient(to left, #fff, #d9d7d7);
 	width: 100vw;
 	height:100vh;
 }
