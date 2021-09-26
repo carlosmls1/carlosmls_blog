@@ -30,16 +30,16 @@
 		</header>
 		<div class="area" >
 			<ul class="circles">
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
-				<li :class="'bg-'+bg_color+'-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
+				<li :class="'bg-yellow-500 h-1 w-1'"></li>
 			</ul>
 		</div >
 		<div class="flex relative z-20 items-center">
