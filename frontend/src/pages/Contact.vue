@@ -11,10 +11,8 @@
 			<p class="text-3xl my-6 text-center dark:text-white">
 				{{ $page.strapi.contact.title }}
 			</p>
-			<div class="flex items-center justify-center mt-4">
-
+			<div class="flex items-center justify-center mt-1">
 				<ContactForm/>
-
 			</div>
 		</div>
 	</Layout>

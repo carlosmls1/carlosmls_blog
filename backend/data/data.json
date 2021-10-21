@@ -28,18 +28,15 @@
       "shareImage": null
     },
     "hero": {
-      "title": "My blog"
+      "title": "Carlos Morales",
+      "subtitle": "Welcome to my blog",
+      "avatar": null
     }
   },
   "writers": [
     {
-      "name": "David Doe",
-      "email": "daviddoe@strapi.io",
-      "picture": null
-    },
-    {
-      "name": "Sarah Baker",
-      "email": "sarahbaker@strapi.io",
+      "name": "Carlos Morales",
+      "email": "carlosmls.crc@gmail.com",
       "picture": null
     }
   ],
@@ -65,7 +62,7 @@
         "id": 1
       },
       "author": {
-        "id": 2
+        "id": 1
       },
       "description": "Maybe the answer is in this article, or not...",
       "image": null
@@ -91,7 +88,7 @@
         "id": 2
       },
       "author": {
-        "id": 2
+        "id": 1
       },
       "description": "How a bug on MySQL is becoming a meme on the internet",
       "image": null
@@ -104,7 +101,7 @@
         "id": 4
       },
       "author": {
-        "id": 2
+        "id": 1
       },
       "description": "Description of a beautiful picture",
       "image": null

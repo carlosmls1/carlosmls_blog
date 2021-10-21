@@ -1,13 +1,19 @@
 <template>
 	<form v-on:submit.prevent="submitForm" class="flex w-full max-w-sm space-x-3">
-		<div class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-lg shadow border dark:bg-gray-800">
+		<div v-if="success">
+			<h2 class="max-w-3xl text-5xl md:text-6xl font-bold mx-auto dark:text-white text-gray-800 text-center py-2">
+				Thank you for you message
+			</h2>
+		</div>
+		<div v-else class="w-full max-w-2xl px-5 py-5 m-auto mt-10 bg-white rounded-lg shadow border dark:bg-gray-800">
 			<div class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
-				Send a message !
+				Send a message!
 			</div>
 			<div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
 				<div class="col-span-2 lg:col-span-1">
 					<div class=" relative ">
 						<input
+								required
 								v-model="form.name"
 								type="text" id="contact-form-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Name"/>
 					</div>
@@ -15,13 +21,15 @@
 				<div class="col-span-2 lg:col-span-1">
 					<div class=" relative ">
 						<input
+								required
 								v-model="form.email"
-								type="text" id="contact-form-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="email"/>
+								type="email" id="contact-form-email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="email"/>
 					</div>
 				</div>
 				<div class="col-span-2">
 					<div class=" relative ">
 						<input
+								required
 								v-model="form.phone"
 								type="phone"
 									 id="contact-form-phone"
@@ -32,6 +40,7 @@
 				<div class="col-span-2">
 					<label class="text-gray-700" for="name">
                             <textarea
+																required
 																v-model="form.message"
 																class="flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40">
                             </textarea>
@@ -54,6 +63,7 @@ export default {
 	name: 'PostFormAxios',
 	data(){
 		return{
+			success: false,
 			form: {
 				name: '',
 				email: '',
@@ -87,7 +97,7 @@ export default {
 			})
 					.then((res) => {
 						//Perform Success Action
-						alert('Success')
+						this.success= true;
 					})
 					.catch((error) => {
 						// error.response.status Check status code
