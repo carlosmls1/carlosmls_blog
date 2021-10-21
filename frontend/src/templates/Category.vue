@@ -82,7 +82,6 @@
 						</nav>
 					</template>
 				</ais-pagination>
-				<ais-powered-by />
 
 			</ais-instant-search>
 		</div>
