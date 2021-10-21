@@ -13,4 +13,5 @@ module.exports = {
     const entity = await strapi.services.article.findOne({ slug });
     return sanitizeEntity(entity, { model: strapi.models.article });
   },
+
 };

@@ -87,6 +87,7 @@ export default {
 			})
 					.then((res) => {
 						//Perform Success Action
+						alert('Success')
 					})
 					.catch((error) => {
 						// error.response.status Check status code
