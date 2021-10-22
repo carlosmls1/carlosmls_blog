@@ -4,8 +4,10 @@ import '~/assets/style.scss';
 
 import DefaultLayout from "~/layouts/Default.vue";
 import InstantSearch from 'vue-instantsearch';
+import VueLazyload from 'vue-lazyload'
 
 export default function (Vue) {
   Vue.component("Layout", DefaultLayout);
 	Vue.use(InstantSearch);
+	Vue.use(VueLazyload)
 }

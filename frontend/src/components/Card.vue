@@ -1,11 +1,11 @@
 <template>
 		<div class="overflow-hidden shadow-lg rounded-lg h-full w-60 md:w-full cursor-pointer m-auto border">
 				<g-link
-						class=""
+						class="relative block"
 						:to="{ path: '/article/' + article.slug }"
 						:key="article.id"
 				>
-					<g-image :src="getStrapiMedia(article.image.url)"  class="max-h-40 w-full object-cover" />
+					<g-image v-lazy="getStrapiMedia(article.image.url)"  class="max-h-40 w-full object-cover h-40"  />
 				</g-link>
 				<div class="bg-white dark:bg-gray-800 w-full p-4">
 
