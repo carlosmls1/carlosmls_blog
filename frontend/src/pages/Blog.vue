@@ -153,7 +153,7 @@ export default {
 	},
 	data() {
 		return {
-			indexName: (process.env.ALGOLIA_INDEX_NAME || 'dev_blog'),
+			indexName: (process.env.GRIDSOME_ALGOLIA_INDEX || 'dev_blog'),
 
 			searchClient: algoliasearch(
 					'VY1QDMCLPW',
