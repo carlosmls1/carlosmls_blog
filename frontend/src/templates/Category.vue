@@ -6,7 +6,7 @@
 		<div class="mx-10 w-full bg-white p-12 my-6 dark:bg-gray-800">
 			<ais-instant-search
 					:routing="routing"
-					:search-client="searchClient" :index-name="(process.env.ALGOLIA_INDEX_NAME || 'dev_blog')">
+					:search-client="searchClient" :index-name="indexName">
 
 				<div class="header flex items-end justify-between mb-12">
 					<div class="title">
@@ -118,6 +118,7 @@ export default {
   },
 	data() {
 		return {
+			indexName: (process.env.ALGOLIA_INDEX_NAME || 'dev_blog'),
 			searchClient: algoliasearch(
 					'VY1QDMCLPW',
 					'010f9f0bf7a16d7b98149442c61c291f'
