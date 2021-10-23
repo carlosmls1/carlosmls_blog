@@ -7,7 +7,7 @@
 				<g-image :src="getStrapiMedia($page.strapi.articles[0].image.url)"  class="filter blur-sm absolute h-full w-full object-cover" />
 				<div class="inset-0 bg-black opacity-25 absolute">
 				</div>
-				<div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
+				<div class="container mx-auto px-6 lg:px-28 lg:mx-28 relative z-10 flex items-center py-32 xl:py-40">
 					<div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
 						<g-link
 								class="hover:text-indigo-500"
@@ -28,12 +28,12 @@
 			</div>
 		</section>
 			<div class="w-full mx-20 -mt-8 z-10">
-				<div class="grid grid-cols-1 md:grid-cols-4 gap-6	">
+				<div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6">
 					<div class="col-span-3 shadow bg-white dark:bg-gray-500 rounded border p-16" id="content">
 						<MyMarkdown :source="$page.strapi.articles[0].content"></MyMarkdown>
 					</div>
 
-					<div class="col-span-1 gap-y-6 grid">
+					<div class="col-span-1 gap-y-6 grid mt-10 lg:mt-0">
 						<AuthorCard :author="$page.strapi.articles[0].author"/>
 						<categories/>
 					</div>

@@ -9,6 +9,7 @@
 				<g-link class="py-2 px-6 flex hover:text-black" to="/blog">Blog</g-link>
 				<g-link class="py-2 px-6 flex hover:text-black" to="/contact">Contact</g-link>
 			</nav>
+
 			<button class="lg:hidden flex flex-col ml-4">
                     <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
                     </span>

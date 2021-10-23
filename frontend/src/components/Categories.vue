@@ -1,6 +1,6 @@
 <template>
 
-	<div class="relative bg-white dark:bg-gray-800 shadow-lg rounded-2xl border">
+	<div class="relative bg-white dark:bg-gray-800 shadow-lg rounded-2xl border hidden md:block">
 		<div class="flex flex-col sm:flex-row sm:justify-around">
 			<div class="w-72">
 				<nav class="mt-10 px-6 ">

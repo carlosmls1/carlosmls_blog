@@ -2,8 +2,8 @@
   <main
     class="dark:bg-gray-800 font-mono bg-white relative overflow-x-hidden h-screen"
   >
-    <header class="h-24 sm:h-32 flex items-center z-30 w-full md:absolute">
-      <div class="container mx-auto px-6 flex items-center justify-between">
+    <header class="lg:h-24 flex lg:flex-row flex-col items-center z-30 w-full md:absolute">
+      <div class="container mx-auto px-6 flex items-center justify-between py-10">
         <div
           class="uppercase text-gray-800 dark:text-white font-black text-3xl flex items-center"
         >
@@ -32,13 +32,29 @@
               >Contact</g-link
             >
           </nav>
-          <button class="lg:hidden flex flex-col ml-4">
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-            <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1"> </span>
-          </button>
+					<button class="lg:hidden flex flex-col ml-4" @click="OpenMenu=!(OpenMenu)">
+                    <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+						<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+						<span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">
+                    </span>
+					</button>
         </div>
       </div>
+			<div class="container dark:bg-gray-800" v-if="OpenMenu">
+				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+					<g-link class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/">
+						Home
+					</g-link>
+					<g-link class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/blog">
+						Blog
+					</g-link>
+					<g-link class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" to="/contact">
+						Contact
+					</g-link>
+				</div>
+			</div>
     </header>
     <div class="area">
       <ul class="circles">
@@ -68,11 +84,13 @@ export default {
   props: ["color"],
   data: function () {
     return {
-      bg_color: "yellow",
+			OpenMenu: false,
+			bg_color: "yellow",
     };
   },
 };
 </script>
+
 <static-query>
 query {
   metadata {

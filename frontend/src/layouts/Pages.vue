@@ -7,9 +7,9 @@
 				</div>
 				<div class="flex items-center">
 					<nav class="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-						<g-link class="py-2 px-6 flex hover:text-black" to="/">Home</g-link>
-						<g-link class="py-2 px-6 flex hover:text-black" to="/blog">Blog</g-link>
-						<g-link class="py-2 px-6 flex hover:text-black" to="/contact">Contact</g-link>
+						<g-link class="py-2 px-6 flex hover:text-black " to="/">Home</g-link>
+						<g-link class="py-2 px-6 flex hover:text-black " to="/blog">Blog</g-link>
+						<g-link class="py-2 px-6 flex hover:text-black " to="/contact">Contact</g-link>
 					</nav>
 					<button class="lg:hidden flex flex-col ml-4">
                     <span class="w-6 h-1 bg-gray-800 dark:bg-white mb-1">

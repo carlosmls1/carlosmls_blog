@@ -3,26 +3,26 @@
 			:title="'Carlos Morales A'"
 	>
 
-		<div class="mx-10 w-full bg-white p-12 my-6 dark:bg-gray-800">
+		<div class="lg:mx-10 w-full bg-white lg:p-12 my-6 dark:bg-gray-800">
 			<ais-instant-search
 					:routing="routing"
 					:search-client="searchClient" :index-name="indexName">
 
-				<div class="header flex items-end justify-between mb-12">
-					<div class="title">
+				<div class="header flex flex-col md:flex-row items-end justify-between mb-12">
+					<div class="title px-5 mx-auto md:ml-0">
 						<p class="text-4xl font-bold text-gray-800 dark:text-white mb-4">
 							Blog
 						</p>
-						<p class="text-2xl font-light text-gray-400">
-							Check Out our latest news cat
+						<p class="text-2xl font-light text-gray-400 hidden md:block">
+							Check Out our latest news
 						</p>
 					</div>
-					<div class="text-end">
+					<div class="text-end mx-auto md:mx-0">
 						<ais-search-box>
 							<template v-slot="{ currentRefinement, isSearchStalled, refine }">
 
 
-								<form class="flex flex-col md:flex-row w-3/4 md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
+								<form class="flex flex-col md:flex-row w-3/4 w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
 									<div class=" relative ">
 										<input
 												type="search"
@@ -32,7 +32,7 @@
 												class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent dark:text-white dark:bg-gray-800"
 												placeholder="Search here"/>
 									</div>
-									<button class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
+									<button class="hidden md:block flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
 										<span :hidden="!isSearchStalled">Loading...</span>
 										<span :hidden="isSearchStalled">Search</span>
 
@@ -61,7 +61,7 @@
 							padding
 						}"
 					>
-						<nav class="px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 mt-10" aria-label="Pagination">
+						<nav class="lg:px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 mt-10" aria-label="Pagination">
 							<div class="hidden sm:block">
 							</div>
 							<div class="flex-1 flex justify-between sm:justify-end">
